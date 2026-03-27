@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Ibrahim | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6}
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#1e293b,#020617);position:relative;overflow:hidden}
+header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.1), transparent 50%);pointer-events:none}
+header h1{font-size:56px;font-weight:700;margin-bottom:15px;position:relative;z-index:1;letter-spacing:-1px}
+header p{font-size:18px;color:#94a3b8;position:relative;z-index:1;max-width:500px}
+.btns{margin-top:40px;display:flex;gap:20px;justify-content:center;position:relative;z-index:1}
+.btn{padding:15px 35px;background:#38bdf8;color:#020617;text-decoration:none;border-radius:8px;font-weight:600;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(56, 189, 248, 0.3);border:2px solid #38bdf8}
+.btn:hover{background:#0ea5e9;box-shadow:0 6px 25px rgba(56, 189, 248, 0.5);transform:translateY(-2px)}
+.btn.secondary{background:transparent;color:#22c55e;border:2px solid #22c55e}
+.btn.secondary:hover{background:#22c55e;color:#020617;box-shadow:0 6px 25px rgba(34, 197, 94, 0.5)}
+nav{position:fixed;top:0;width:100%;background:rgba(2, 6, 23, 0.95);backdrop-filter:blur(10px);padding:20px;text-align:center;z-index:1000;border-bottom:1px solid rgba(56, 189, 248, 0.1)}
+nav a{color:#e5e7eb;margin:0 25px;text-decoration:none;font-weight:500;transition:color 0.3s ease}
+nav a:hover{color:#38bdf8}
+section{padding:100px 10%;max-width:1200px;margin:auto}
+h2{font-size:40px;margin-bottom:50px;color:#38bdf8;font-weight:700;position:relative}
+h2::after{content:'';display:block;width:60px;height:4px;background:#22c55e;margin-top:15px}
+h3{font-size:20px;margin-bottom:12px;color:#e5e7eb;font-weight:600}
+.about{background:rgba(30, 41, 59, 0.3);border-radius:12px;border-left:4px solid #38bdf8}
+.about p{line-height:1.8;color:#cbd5f5;font-size:16px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+.skill{background:linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.6));padding:30px 25px;border-radius:12px;text-align:center;border:1px solid rgba(56, 189, 248, 0.2);transition:all 0.3s ease;font-weight:500;color:#e5e7eb}
+.skill:hover{background:linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(34, 197, 94, 0.1));border-color:#38bdf8;transform:translateY(-5px);box-shadow:0 8px 20px rgba(56, 189, 248, 0.15)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin-top:40px}
+.project{background:rgba(30, 41, 59, 0.5);padding:30px;border-radius:12px;transition:all 0.3s ease;border:1px solid rgba(56, 189, 248, 0.1);overflow:hidden}
+.project::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg, #38bdf8, #22c55e);transform:scaleX(0);transition:transform 0.3s ease}
+.project:hover{transform:translateY(-8px);background:rgba(30, 41, 59, 0.8);border-color:#38bdf8;box-shadow:0 12px 30px rgba(56, 189, 248, 0.2)}
+.project:hover::before{transform:scaleX(1)}
+.project p{color:#cbd5f5;margin-top:12px;font-size:15px}
+.contact{background:rgba(30, 41, 59, 0.3);border-radius:12px;padding:50px}
+.contact p{margin:15px 0;font-size:16px;color:#cbd5f5}
+.contact p strong{color:#38bdf8;font-weight:600}
+footer{text-align:center;padding:40px 20px;background:#020617;color:#94a3b8;border-top:1px solid rgba(56, 189, 248, 0.1);font-size:14px}
+@media(max-width:768px){
+header h1{font-size:36px}
+header p{font-size:16px}
+.btns{flex-direction:column;align-items:center}
+nav a{margin:0 15px}
+section{padding:60px 5%}
+h2{font-size:28px}
+.skills{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.projects{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<h1>Mohamed Ibrahim</h1>
+<p>Web Developer | Python| Data Analyst</p>
+
+<div class="btns">
+<a class="btn" href="resume.pdf" target="_blank">View Resume</a>
+</div>
+
+</header>
+
+<section id="about" class="about">
+<h2>About Me</h2>
+<p>I'm a passionate developer from Tirunelveli, India, pursuing B.Com in Corporate Secretaryship with a strong focus on web development and data analysis. I specialize in building modern web applications using Python and contemporary web technologies. With expertise in data visualization and analytics, I'm committed to creating efficient, scalable solutions that bridge business needs with technical excellence.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">Python Programming</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Excel</div>
+<div class="skill">Tally Accounting</div>
+<div class="skill">Matplotlib Data Visualization</div>
+<div class="skill">Basic Web Development</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project">
+<h3>Python Data Visualization</h3>
+<p>Developed interactive data visualization dashboards using Python and Matplotlib, transforming complex datasets into actionable business insights through advanced charting and statistical analysis.</p>
+</div>
+<div class="project">
+<h3>Sales Performance Analysis</h3>
+<p>Engineered comprehensive Excel-based analytics solution with automated reports and dynamic charts, enabling data-driven decision making and improving sales tracking efficiency by 40%.</p>
+</div>
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>Designed and developed a modern, responsive portfolio website showcasing projects and skills with optimized performance, accessibility standards, and professional UI/UX design.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Get In Touch</h2>
+<p><strong>Email:</strong> ibrahim.rm.56@gmail.com</p>
+<p><strong>Phone:</strong> +91 6385199890</p>
+<p><strong>Location:</strong> Tirunelveli, Tamil Nadu, India</p>
+</section>
+
+<footer>
+<p>© 2026 Mohamed Ibrahim | Portfolio</p>
+</footer>
+
+</body>
+</html>
